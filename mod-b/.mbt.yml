@@ -1,5 +1,8 @@
 name: mod-b
 commands:
+  install:
+    cmd: npm
+    args: [install]
   test:
     cmd: npm
     args: [test]
