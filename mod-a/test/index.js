@@ -1,5 +1,5 @@
 const assert = require('chai').assert;
-const {add, mul} = require('../src/index');
+const {add, mul, div} = require('../src/index');
 
 describe('tests', () => {
   it('should add', () => {
@@ -8,5 +8,9 @@ describe('tests', () => {
 
   it('should multiply', () => {
     assert.equal(mul(2, 3), 6);
+  });
+
+  it('should divide', () => {
+    assert.equal(div(6, 2), 3);
   });
 });
