@@ -1,5 +1,5 @@
 const assert = require('chai').assert;
-const {eq} = require('../src/index');
+const {eq, gt} = require('../src/index');
 
 describe('tests', () => {
   it('should compare same value', () => {
@@ -8,5 +8,9 @@ describe('tests', () => {
 
   it('should compare different values', () => {
     assert.isFalse(eq('a', 'b'));
+  });
+
+  it('should compare bigger value', () => {
+    assert.isTrue(gt(2, 1));
   });
 });
