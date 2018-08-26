@@ -1,8 +1,8 @@
 const assert = require('chai').assert;
-const add = require('../src/index');
+const {concat} = require('../src/index');
 
 describe('tests', () => {
-  it('should subtract', () => {
-    assert.equal(add(1, 1), 0);
+  it('should concat', () => {
+    assert.equal(concat('a', 'b'), 'ab');
   });
 });

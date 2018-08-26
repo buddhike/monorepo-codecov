@@ -1,3 +1,5 @@
-module.exports = function(a, b) {
-  return a - b;
+module.exports = {
+  concat: function(a, b) {
+    return a + b;
+  }
 };

@@ -1,0 +1,25 @@
+{
+  "name": "mod-c",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "eslint": "eslint --fix src test",
+    "test": "nyc mocha",
+    "report": "nyc report --reporter=lcov",
+    "watch": "nodemon --ignore out/ --ignore node_modules/ --exec 'npm run eslint && npm run test' ",
+    "server": "nodemon --ignore node_modules/ src/index.js",
+    "start": "npm run watch & sleep 3000 && npm run server"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.4.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.3",
+    "nyc": "^12.0.2",
+    "proxyquire": "^2.1.0",
+    "sinon": "^6.1.5"
+  }
+}
