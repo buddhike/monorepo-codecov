@@ -1,0 +1,9 @@
+name: mod-a
+commands:
+  test:
+    cmd: npm
+    args: [test]
+  report:
+    cmd: npm
+    args: [run, report]
+

@@ -8,6 +8,7 @@
   "scripts": {
     "eslint": "eslint --fix src test",
     "test": "nyc mocha",
+    "report": "nyc report --reporter=lcov",
     "watch": "nodemon --ignore out/ --ignore node_modules/ --exec 'npm run eslint && npm run test' ",
     "server": "nodemon --ignore node_modules/ src/index.js",
     "start": "npm run watch & sleep 3000 && npm run server"
